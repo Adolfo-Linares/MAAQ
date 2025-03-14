@@ -1,0 +1,370 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   YoungLA
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: palevioletred;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .product {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            flex: 0 0 auto;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product .details {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .top-bar .left {
+            font-size: 14px;
+        }
+        .top-bar .right {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar .right a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+            position: relative;
+        }
+        .top-bar .right a.contactanos::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+        .top-bar .right a:hover {
+            text-decoration: underline;
+        }
+        .top-bar .right .icon {
+            margin-right: 10px;
+        }
+        .brand-icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 20px;
+            margin: 20px 0 10px;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .carousel {
+                flex-wrap: nowrap;
+            }
+            .product {
+                width: 45%;
+                margin: 10px 5px;
+                flex: 0 0 auto;
+            }
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .top-bar .right {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .nav {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .nav a {
+                margin: 10px 20px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="top-bar">
+   <div class="left">
+    FREE SHIPPING FOR ALL U.S. ORDERS OVER $75
+   </div>
+   <div class="right">
+    <a class="contactanos" href="tel:+524434949397">
+     CONTACTANOS
+    </a>
+    <img alt="Brand Icon" class="brand-icon" src="https://via.placeholder.com/24"/>
+    <a href="#">
+     <i class="fas fa-globe icon">
+     </i>
+     US
+    </a>
+   </div>
+  </div>
+  <div class="header">
+   <div class="logo">
+    MAAQ
+   </div>
+  </div>
+  <div class="nav">
+   <a href="hombre.html">PARA HOMBRE</a>
+   <a href="mujer.html"> PARA MUJER </a>
+  </div>
+  <div class="section-title">
+   ADULTOS
+  </div>
+  <div class="carousel">
+   <div class="product">
+    <img alt="Man wearing a black hoodie" height="300" src="https://storage.googleapis.com/a1aa/image/Jj93Rah-FO7GWRpspSafTlvE9N6LFvju_mKHYtX6Ebg.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Hoodie
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpztbCLYXHHLvHtH14Ncvh631sxS48yPvSA&s" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $39.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing a light gray sweater" height="300" src="https://storage.googleapis.com/a1aa/image/4ATgqjxwLrdRIp_nIcIAO5EwvhauVhFfkNZWyEtnDTU.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Light Gray Sweater
+     </p>
+     <p>
+      $59.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://www.tuasesordemoda.com/wp-content/uploads/2022/10/outfit-con-camisa-traje2.jpeg" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://storage.googleapis.com/a1aa/image/6CONcI_ChPsGdmBHxjX_t_y_aGRGBlXO6foMT6JzdR8.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black pants with white text" height="300" src="https://storage.googleapis.com/a1aa/image/AydSBDgxv1ildtOUDcKL1a1ReG9xma2XA5R73WURFNU.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Pants
+     </p>
+     <p>
+      $69.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="section-title">
+
+
+   NIÑOS
+  </div>
+  <div class="carousel">
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://balu.com.co/wp-content/uploads/2022/05/WhatsApp-Image-2022-08-23-at-2.51.27-PM-e1661286306933.jpeg" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://down-mx.img.susercontent.com/file/sg-11134201-22100-ixusj8mn2jivfd_tn.webp" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://m.media-amazon.com/images/I/611RTE9R8+L._AC_UY580_.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpV8BDN2lLXuDqrOQKS-geNys9AFmGWmCRYg&s" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://i.pinimg.com/736x/f1/89/d6/f189d6592d0c81629059567b416545f7.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+
+   <div class="product">
+    <img alt="Man wearing black shorts with white text" height="300" src="https://i.etsystatic.com/11463421/r/il/2007e2/3546997770/il_570xN.3546997770_6da9.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Shorts
+     </p>
+     <p>
+      $49.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
