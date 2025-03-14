@@ -47,16 +47,15 @@
         .nav a:hover {
             text-decoration: underline;
         }
-
-        .products {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    justify-content: center;
-    padding: 20px;
-}
-
-        
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
         .product {
             background-color: #fff;
             margin: 10px;
@@ -109,13 +108,19 @@
         .top-bar .right .icon {
             margin-right: 10px;
         }
+        .brand-icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
         @media (max-width: 768px) {
-            .products {
+            .carousel {
                 flex-wrap: nowrap;
             }
             .product {
                 width: 45%;
                 margin: 10px 5px;
+                flex: 0 0 auto;
             }
             .top-bar {
                 flex-direction: column;
@@ -145,6 +150,8 @@
    <div class="right">
     <a href="tel:+524434949397">
      CONTACTANOS
+    </a>
+    <img alt="Brand Icon" class="brand-icon" src="https://via.placeholder.com/24" />
     <a href="#">
      <i class="fas fa-globe icon">
      </i>
@@ -162,11 +169,10 @@
     PARA HOMBRE
    </a>
    <a href="#">
-    PARA MUUJER
+    PARA MUJER
    </a>
   </div>
-  
-  <div class="products">
+  <div class="carousel">
    <div class="product">
     <img alt="Man wearing a black hoodie" height="300" src="https://storage.googleapis.com/a1aa/image/Jj93Rah-FO7GWRpspSafTlvE9N6LFvju_mKHYtX6Ebg.jpg" width="200"/>
     <div class="details">
@@ -181,7 +187,6 @@
      </p>
     </div>
    </div>
-
    <div class="product">
     <img alt="Man wearing black shorts with white text" height="300" src="https://storage.googleapis.com/a1aa/image/6CONcI_ChPsGdmBHxjX_t_y_aGRGBlXO6foMT6JzdR8.jpg" width="200"/>
     <div class="details">
@@ -189,14 +194,43 @@
       Black Shorts
      </p>
      <p>
-           $49.99
+      $39.99
      </p>
      <p>
       Sizes: S, M, L, XL
      </p>
     </div>
    </div>
-
+   <div class="product">
+    <img alt="Man wearing a light gray sweater" height="300" src="https://storage.googleapis.com/a1aa/image/4ATgqjxwLrdRIp_nIcIAO5EwvhauVhFfkNZWyEtnDTU.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Light Gray Sweater
+     </p>
+     <p>
+      $59.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+   <div class="product">
+    <img alt="Man wearing black pants with white text" height="300" src="https://storage.googleapis.com/a1aa/image/AydSBDgxv1ildtOUDcKL1a1ReG9xma2XA5R73WURFNU.jpg" width="200"/>
+    <div class="details">
+     <p>
+      Black Pants
+     </p>
+     <p>
+      $69.99
+     </p>
+     <p>
+      Sizes: S, M, L, XL
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="carousel">
    <div class="product">
     <img alt="Man wearing black shorts with white text" height="300" src="https://storage.googleapis.com/a1aa/image/6CONcI_ChPsGdmBHxjX_t_y_aGRGBlXO6foMT6JzdR8.jpg" width="200"/>
     <div class="details">
@@ -204,14 +238,13 @@
       Black Shorts
      </p>
      <p>
-           $49.99
+      $49.99
      </p>
      <p>
       Sizes: S, M, L, XL
      </p>
     </div>
    </div>
-
    <div class="product">
     <img alt="Man wearing black shorts with white text" height="300" src="https://storage.googleapis.com/a1aa/image/6CONcI_ChPsGdmBHxjX_t_y_aGRGBlXO6foMT6JzdR8.jpg" width="200"/>
     <div class="details">
@@ -219,14 +252,13 @@
       Black Shorts
      </p>
      <p>
-           $49.99
+      $49.99
      </p>
      <p>
       Sizes: S, M, L, XL
      </p>
     </div>
    </div>
-
    <div class="product">
     <img alt="Man wearing black shorts with white text" height="300" src="https://storage.googleapis.com/a1aa/image/6CONcI_ChPsGdmBHxjX_t_y_aGRGBlXO6foMT6JzdR8.jpg" width="200"/>
     <div class="details">
@@ -234,14 +266,13 @@
       Black Shorts
      </p>
      <p>
-           $49.99
+      $49.99
      </p>
      <p>
       Sizes: S, M, L, XL
      </p>
     </div>
    </div>
-
    <div class="product">
     <img alt="Man wearing black shorts with white text" height="300" src="https://storage.googleapis.com/a1aa/image/6CONcI_ChPsGdmBHxjX_t_y_aGRGBlXO6foMT6JzdR8.jpg" width="200"/>
     <div class="details">
@@ -249,32 +280,13 @@
       Black Shorts
      </p>
      <p>
-           $49.99
+      $49.99
      </p>
      <p>
       Sizes: S, M, L, XL
      </p>
     </div>
    </div>
-
-
-
-    <!-- Nueva fila de productos -->
-    <div class="product">
-        <img alt="Gray Hoodie" height="300" src="https://storage.googleapis.com/a1aa/image/nueva_imagen_1.jpg" width="200"/>
-        <div class="details">
-         <p>Gray Hoodie</p>
-         <p>$54.99</p>
-         <p>Sizes: S, M, L, XL</p>
-        </div>
-       </div>
-    
-       <div class="product">
-        <img alt="Blue T-shirt" height="300" src="https://storage.googleapis.com/a1aa/image/nueva_imagen_2.jpg" width="200"/>
-        <div class="details">
-         <p>Blue T-shirt</p>
-         <p>$29.99</p>
-         <p>Sizes: S, M, L, XL</p>
-        </div>
-       </div>
-    </div>
+  </div>
+ </body>
+</html>
