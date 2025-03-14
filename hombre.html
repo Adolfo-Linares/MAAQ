@@ -72,10 +72,12 @@
             transform: scale(1.05);
         }
         .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
+    width: 200px;  /* Ajusta según el tamaño deseado */
+    height: 300px; /* Ajusta según el tamaño deseado */
+    object-fit: cover; /* Recorta la imagen para que se ajuste sin deformarse */
+    border-radius: 10px;
+}
+
         .product .details {
             margin-top: 10px;
             font-size: 14px;
@@ -162,18 +164,12 @@
  <body>
   <div class="top-bar">
    <div class="left">
-    FREE SHIPPING FOR ALL U.S. ORDERS OVER $75
+    "Viste con estilo, vive con actitud."
    </div>
    <div class="right">
     <a class="contactanos" href="tel:+524434949397">
      CONTACTANOS
-    </a>
-    <img alt="Brand Icon" class="brand-icon" src="https://via.placeholder.com/24"/>
-    <a href="#">
-     <i class="fas fa-globe icon">
-     </i>
-     US
-    </a>
+
    </div>
   </div>
   <div class="header">
